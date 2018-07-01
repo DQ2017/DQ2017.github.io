@@ -7,7 +7,6 @@ description: > # this means to ignore newlines until "twitter_username:"
 # social links
 #twitter_username: jekyllrb
 #github_username:  jekyll
-powered: jekyll + minima
 rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
@@ -37,9 +36,12 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
  - about.md
+ - categories.md
 
 # Build settings
 theme: minima
+
+powered: powered by jekyll  
 
 plugins:
  - jekyll-feed
