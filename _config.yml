@@ -41,6 +41,12 @@ header_pages:
 # Build settings
 theme: minima
 
+gems:
+  - jekyll-paginate
+
+  paginate: 3
+  paginate_path: posts/page:num/
+
 powered: powered by jekyll  
 
 plugins:
