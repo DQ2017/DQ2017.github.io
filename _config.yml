@@ -38,6 +38,7 @@ header_pages:
  #- about.md
  - book.md
  - movie.md
+ - archive.md
 
 # Build settings
 theme: minima
