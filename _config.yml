@@ -45,7 +45,7 @@ theme: minima
 gems:
   - jekyll-paginate
 
-paginate: 3
+paginate: 1
 paginate_path: "page:num"
 
 plugins:
