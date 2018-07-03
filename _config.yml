@@ -43,11 +43,11 @@ header_pages:
 # Build settings
 theme: minima
 
-gems:
+# gems:
   - jekyll-paginate
 
-paginate: 1
-paginate_path: "page:num"
+# paginate: 1
+# paginate_path: "page:num"
 
 plugins:
  - jekyll-feed

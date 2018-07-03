@@ -1,5 +1,5 @@
 ---
 layout: page
-title: 存档
+title: /存档
 permalink: /archive
 ---
