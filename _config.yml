@@ -5,9 +5,9 @@ description: > # this means to ignore newlines until "twitter_username:"
   Time in a bottle.
 
 # social links
-#twitter_username: jekyllrb
-#github_username:  jekyll
-rss: rss
+# twitter_username: jekyllrb
+# github_username:  jekyll
+# rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
@@ -35,8 +35,9 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - about.md
- - categories.md
+ #- about.md
+ - book.md
+ - movie.md
 
 # Build settings
 theme: minima
@@ -45,7 +46,7 @@ gems:
   - jekyll-paginate
 
 paginate: 3
-paginate_path: posts/page:num/
+paginate_path: "page:num"
 
 plugins:
  - jekyll-feed
