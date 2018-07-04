@@ -1,5 +1,5 @@
 ---
-layout: page
-title: 读书
-permalink: /notes/book
+layout: tagpage
+title: "读书"
+tag: 读书
 ---
