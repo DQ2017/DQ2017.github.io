@@ -1,23 +1,14 @@
 ---
 layout: page
 title: 标签
+permalink: /tag/
 ---
-{% for tag in site.tags %}
-    {% assign count = tag | last | size %}
-    {% assign fontsize = count | times: 4 %}
-    {% if count  > 2 %}
-    <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}" title="{{ tag | first }}" data-count="{{ count }}" style="font-size: {% if fontsize > 24 %}24{% else %}{{ fontsize }}{% endif %}px">{{ tag | first }}</a>
-    {% endif %}
-{% endfor %}
+{% for tag in site.tags %}<a href="#{{ tag | first }}">{{ tag | first }}<sup>({{ tag[1].size }})</sup></a> {% endfor %}
 
-<table id="tags-table" style="display: none">
-    <thead>
-        <tr></tr>
-        <tr>
-          <th>日期</th>
-          <th>文章</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
+{% for tag in site.tags %}
+<h2><a name="{{ tag | first }}"># {{ tag | first }}</a></h2>
+
+{% for post in tag.last %}
+* {{ post.date | date: '%m-%d' }} &raquo; [{{ post.title }}]({{ post.url }} "{{ post.title }}"){:.archive-item-link}
+{% endfor %}
+{% endfor %}

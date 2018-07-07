@@ -1,6 +1,6 @@
 ---
 layout: page
-title: /存档
+title: 存档
 ---
 
 {% assign count = 1 %}
@@ -23,7 +23,7 @@ title: /存档
 {% assign year = post.date | date: '%Y' %}
 {% assign nyear = post.next.date | date: '%Y' %}
 {% if year != nyear %}
-### {{ post.date | date: '%Y' }} ({{ counts[i] }})
+### {{ post.date | date: '%Y' }}<sup> ({{ counts[i] }})</sup>
 {:.archive-title}
 {% assign i = i | plus: 1 %}
 {% endif %}
