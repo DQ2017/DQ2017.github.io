@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 存档
+title: 全部文章
 ---
 
 {% assign count = 1 %}
